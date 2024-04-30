@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --bg: #ffffff;
+  --primary: #650360;
+}
+
+* {
+  font-family: "Lato", sans-serif !important;
+  color: #2a2a2a;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+#root {
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+input:is(:active, :focus, :focus-visible, :focus-within) {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button:disabled {
+  opacity: 0.65;
+}
